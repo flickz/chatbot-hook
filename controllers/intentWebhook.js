@@ -7,7 +7,7 @@ module.exports = (req, res) => {
     request: req,
     response: res
   })
-  const data = JSON.parse(fullFillmentTexts)
+  const data = fullFillmentTexts
   const intent = agent.intent;
   const action = agent.action.toLocaleUpperCase();
   console.log(action)
