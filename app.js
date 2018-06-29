@@ -12,4 +12,4 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.get('/', verificationController);
 app.post('/', messageWebhookController);
 
-app.listen(3000, () => console.log(`Webhook server is listening, port 3000`));
+app.listen(3000 || process.env.PORT, () => console.log(`Webhook server is listening, port 3000`));
