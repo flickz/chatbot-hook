@@ -17,6 +17,7 @@ module.exports = (event) => {
   const message = event.message.text;
   const apiaiSession = apiAiClient.textRequest(message, {sessionId: 'crowdbotics_bot'});
   apiaiSession.on('response', (response) => {
+    console.log(response)
     const result = response.result.fulfillment.speech;
     sendTextMessage(senderId, result);
   });
