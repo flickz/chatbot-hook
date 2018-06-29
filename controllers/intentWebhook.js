@@ -14,4 +14,5 @@ module.exports = (req, res) => {
   const parameters = agent.parameters;
   console.log(`INFO: User asked, ${intent} for ${JSON.stringify(parameters)}, ${action}`)
   agent.addResponse_(data['CHECK_CREDIT_BALANCE'].success)
+  agent.send_()
 }
