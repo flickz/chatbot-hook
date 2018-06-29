@@ -1,0 +1,7 @@
+{
+  "CHECK_CREDIT_BALANCE": {
+    "success": "Your credit balance is N13.42k",
+    "failure": "Sorry, we are unable to check your credit balance at this time",
+    "invalid-num": "Sorry, your phone number is invalid, please provide a valid phone number"
+  }
+}
